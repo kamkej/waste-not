@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WasteNot</string>
+    <string name="title_activity_main">Waste Not</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <array name="nav_drawer_icon">
+        <item></item>
+    </array>
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+l
+    <string name="action_settings">Settings</string>
+    <string name="about">About us</string>
+    <string name="title_activity_have_list">My Cards</string>
+    <string name="title_activity_my_deck">My Deck</string>
+    <string name="title_activity_novocla">novocla</string>
+    <string name="title_activity_whish_list">WhishListActivity</string>
+    <string name="title_activity_wanted_list">My Wanted List</string>
+    <string name="title_activity_mydeck">Mydeck</string>
+
+
+</resources>

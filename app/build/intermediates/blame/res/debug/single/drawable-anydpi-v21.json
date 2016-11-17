@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_wanted_list_black.xml",
+        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_wanted_list_black.xml"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_home.xml",
+        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_home.xml"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_my_deck.xml",
+        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_my_deck.xml"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_have_black.xml",
+        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_have_black.xml"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_have.xml",
+        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_have.xml"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_edit.xml",
+        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_edit.xml"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_wanted_list.xml",
+        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_wanted_list.xml"
+    }
+]

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_decks"
+            android:icon="@drawable/ic_my_deck"
+            android:title="My Decks" />
+        <item
+            android:id="@+id/nav_have_list"
+            android:icon="@drawable/ic_have"
+            android:title="My Cards" />
+        <item
+            android:id="@+id/nav_wanted_list"
+            android:icon="@drawable/ic_wanted_list"
+            android:title="My Wanted List" />
+
+    </group>
+
+
+</menu>

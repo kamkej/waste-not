@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_have"
+        android:icon="@drawable/ic_wanted_list"
+        android:title="wish"
+        app:showAsAction='never'
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/action_wanted"
+        android:icon="@drawable/ic_have"
+        android:title="Have"
+        app:showAsAction='never'
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="@string/about"
+        app:showAsAction="never"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"
+        android:visible="false"/>
+</menu>
