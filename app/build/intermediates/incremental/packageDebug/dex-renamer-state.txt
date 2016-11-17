@@ -1,4 +1,4 @@
-#Thu Nov 17 10:31:06 BRST 2016
+#Thu Nov 17 17:37:07 BRST 2016
 base.0=/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b7192bf8a22df2d62629bcf57749492a681c2e9d
 renamed.1=classes2.dex
 renamed.0=classes.dex

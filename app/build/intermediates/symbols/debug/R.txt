@@ -649,7 +649,7 @@ int drawable wb 0x7f020077
 int drawable whish 0x7f020078
 int drawable wp 0x7f020079
 int drawable wu 0x7f02007a
-int id about 0x7f0d00ac
+int id about 0x7f0d00ad
 int id action0 0x7f0d0097
 int id action_bar 0x7f0d005c
 int id action_bar_activity_content 0x7f0d0000
@@ -662,14 +662,15 @@ int id action_context_bar 0x7f0d005d
 int id action_dell 0x7f0d00a8
 int id action_divider 0x7f0d009b
 int id action_edit 0x7f0d00a9
-int id action_have 0x7f0d00aa
+int id action_have 0x7f0d00ab
 int id action_menu_divider 0x7f0d0002
 int id action_menu_presenter 0x7f0d0003
 int id action_mode_bar 0x7f0d0059
 int id action_mode_bar_stub 0x7f0d0058
 int id action_mode_close_button 0x7f0d003e
-int id action_settings 0x7f0d00ad
-int id action_wanted 0x7f0d00ab
+int id action_settings 0x7f0d00ae
+int id action_share 0x7f0d00aa
+int id action_wanted 0x7f0d00ac
 int id activity_chooser_view_content 0x7f0d003f
 int id adjust_height 0x7f0d0033
 int id adjust_width 0x7f0d0034

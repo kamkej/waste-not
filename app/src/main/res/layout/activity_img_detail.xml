@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
 
     tools:context="br.com.wastenot.wastenot.ImgDetail">
 
@@ -11,6 +12,6 @@
         android:layout_width="320sp"
         android:layout_height="445sp"
         android:contentDescription="Teste"
-        android:background="#aaaaaa"/>
+        android:background="@android:color/transparent"/>
 
 </LinearLayout>

@@ -28,7 +28,7 @@ import java.util.List;
 public class MyDeckActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     BDWrapper db;
     ListView list;
-    MenuItem dell,edit;
+    MenuItem dell,edit,share;
     AdapterDeckView adapter;
     List<Deck> deckList;
     List<ItemDeckView> itens = new ArrayList<ItemDeckView>();
@@ -79,6 +79,8 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
                             dell.setVisible(false);
                             edit.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
                             edit.setVisible(false);
+                            share.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+                            share.setVisible(false);
 
                         }
                 } else if (!decksSelect.isEmpty()) {
@@ -109,6 +111,8 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
                 dell.setVisible(true);
                 edit.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
                 edit.setVisible(true);
+                share.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+                share.setVisible(true);
 
                 decksSelect.add(String.valueOf(deckList.get(position).getId()));
                 if (decksSelect.size() > 1) {
@@ -129,6 +133,7 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
         getMenuInflater().inflate(R.menu.decks, menu);
         dell = menu.findItem(R.id.action_dell);
         edit = menu.findItem(R.id.action_edit);
+        share = menu.findItem(R.id.action_share);
 
         return true;
     }
@@ -162,6 +167,12 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
 
 
 
+        }else if(id==R.id.action_share){
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
         }
 
         return super.onOptionsItemSelected(item);

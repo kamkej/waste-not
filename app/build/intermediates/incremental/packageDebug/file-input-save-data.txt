@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Nov 17 10:31:07 BRST 2016
+#Thu Nov 17 17:37:08 BRST 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xhdpi-v4/ic_launcher.png

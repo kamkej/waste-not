@@ -5,7 +5,7 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="1481852559252"
+    timestamp="24600413618376"
     token="6010954756798824462"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -22,15 +22,23 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
+
     <build
-        timestamp="1402122284099"
+        timestamp="24428888635611"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/julio/AndroidStudioProjects/WasteNot/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="1481852559252"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="24600413618376"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
 
 </instant-run>

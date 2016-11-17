@@ -2375,7 +2375,7 @@ containing a value of this type.
         public static final int wu=0x7f02007a;
     }
     public static final class id {
-        public static final int about=0x7f0d00ac;
+        public static final int about=0x7f0d00ad;
         public static final int action0=0x7f0d0097;
         public static final int action_bar=0x7f0d005c;
         public static final int action_bar_activity_content=0x7f0d0000;
@@ -2388,14 +2388,15 @@ containing a value of this type.
         public static final int action_dell=0x7f0d00a8;
         public static final int action_divider=0x7f0d009b;
         public static final int action_edit=0x7f0d00a9;
-        public static final int action_have=0x7f0d00aa;
+        public static final int action_have=0x7f0d00ab;
         public static final int action_menu_divider=0x7f0d0002;
         public static final int action_menu_presenter=0x7f0d0003;
         public static final int action_mode_bar=0x7f0d0059;
         public static final int action_mode_bar_stub=0x7f0d0058;
         public static final int action_mode_close_button=0x7f0d003e;
-        public static final int action_settings=0x7f0d00ad;
-        public static final int action_wanted=0x7f0d00ab;
+        public static final int action_settings=0x7f0d00ae;
+        public static final int action_share=0x7f0d00aa;
+        public static final int action_wanted=0x7f0d00ac;
         public static final int activity_chooser_view_content=0x7f0d003f;
         public static final int adjust_height=0x7f0d0033;
         public static final int adjust_width=0x7f0d0034;
