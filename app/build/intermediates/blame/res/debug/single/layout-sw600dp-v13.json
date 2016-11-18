@@ -1,6 +1,6 @@
 [
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     }
 ]

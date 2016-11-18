@@ -5,40 +5,33 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="24600413618376"
-    token="6010954756798824462"
-    verifier="COLD_SWAP_REQUESTED" >
+    timestamp="692477368714"
+    token="-8312056344473566484"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1274" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="329" />
     <task
         name="verifier"
-        duration="0" />
+        duration="12" />
 
     <artifact
-        location="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="/home/julio/AndroidStudioProjects/waste-not/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="24428888635611"
+        timestamp="692477368714"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/julio/AndroidStudioProjects/WasteNot/app/build/outputs/apk/app-debug.apk"
+            location="/home/julio/AndroidStudioProjects/waste-not/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="24600413618376"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

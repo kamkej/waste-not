@@ -3,120 +3,93 @@
 
     <item
         is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="292a9fa091757208efa65e77eef63088247e51f3">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.0_1fe3d9377dc66549ea1652129969d0e0616e988f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.1.0_b5e6e922f025680501db876dd88e12cf88c849c9/classes.dex" />
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.1.0_f644ca29ab70bb7034188606d9fbc7eb91c579fc/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.0_b6748b1e3bc124b85ecd51c3b7eecb148d072b45/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.2.0_ab2d37f130988021d38ab99150da7ec6abfc9ad5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.0_537182cab2fd1cfbb8d54c7769a5331c9691bf61/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="292a9fa091757208efa65e77eef63088247e51f3">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.0_9a22a95fc8fe7bcb634cce780cb02c7025124432/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_7ab510a15c2395c09ed050d404aaffe90db1e360/classes.dex" />
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_14c0e2dd0444ec31e6a1a555279ea2a91e0f2436/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.0_808ee5af3fdd2da97aa6130e31303bb0c0a081ff/classes.dex" />
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.0_9538972e0cc439d12419ec0c15aea4ed36e33902/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.0_bbe2c060ede9f78416d97123f233636537f850d1/classes.dex" />
+        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.2.0_8dd3c9469d57ba83a0c1b1ce6b1861d719333ef2/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.2.0_0064229802aefc6bfba3c630945b1f142835460a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="19bf256463346e2057ffa556ca054cfd3d4aa7b3">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_68b4629e3db458c50f605990321668342557fe8d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.2.0_19dbf78a66809c87fd4f52b1328f1f595c04b2e1/classes.dex" />
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.2.0_d0b654a630d6699f3985dcb68cee35df3eb35e35/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="fe468d9cacff9e9b08782946f5a8066175502d63">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_8af5eece191a1464a6ed5dfdeb6608884b6b8987/classes.dex" />
+        sha1="fa238f7df987a6fa6fb590bc92227597a4aadc35">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b088f42a9beb6012d288cbc57bf44825f82c1d6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.0_a427a3e398e1b089e3133a9bcbceb8053fa57e2f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c0297cc7978879cc90fdb217e1e28dd4eb7d3279">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bf16e54fc8b3a9fe3c9351824d6e462a4a2f5a45/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.0_7a926bae4d0d646a25e21b80f19ac5957c82360b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.0_9b4e7962e298590fc3ef99974a2f381c9e5805f3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -125,88 +98,16 @@
         optimize="true"
         revision="23.0.1"
         sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.2.0_85fa1577036584fba617387c5a549477988c8442/classes.dex" />
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.2.0_85fa1577036584fba617387c5a549477988c8442/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.2.0_d5a6ab24938fb7a1c3c07c7dc67114d483e9f57a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.1.0_e97342f9b62308c5650c62164d3ac470fc01a4cc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1cb37fde452a6eb2068b9e88c3948250a6156066">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a2776a83db12990c4a09a6d9f85d232e2972a3a0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6e239441500605809818997dd63b62a947195f8c">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.0_b2d70347c0ef7e58d5e425374739786cace89a52/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.2.0_ce5b3f5202a1ea665cf71c826c74ab7dbd1b999f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.2.0_a02bf73d8f5fef103bc01fdc91ba6bb689f0ba85/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6e239441500605809818997dd63b62a947195f8c">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.0_7b78846a2c5d654659f23f42be8a2a01a460711b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aae9b57f1510300b9b7b98505c7c61f6de54d47b">
-        <dex dex="/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b7192bf8a22df2d62629bcf57749492a681c2e9d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="/home/julio/AndroidStudioProjects/aulas/WasteNot/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_3148a4d6e1be78988845cc9df45216baf5b53db3/classes.dex" />
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.2.0_4fd410af70f5886b9562abd3ce75f3c4e393e21e/classes.dex" />
     </item>
 
 </items>

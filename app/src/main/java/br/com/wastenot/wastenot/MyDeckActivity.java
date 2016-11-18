@@ -3,6 +3,7 @@ package br.com.wastenot.wastenot;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -168,11 +169,15 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
 
 
         }else if(id==R.id.action_share){
+
+
+
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
-            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=141988&type=card");
             sendIntent.setType("text/plain");
             startActivity(sendIntent);
+
         }
 
         return super.onOptionsItemSelected(item);

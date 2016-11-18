@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/home/julio/AndroidStudioProjects/WasteNot/app/src/main/res/values-w820dp/dimens.xml",
+                    "file": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

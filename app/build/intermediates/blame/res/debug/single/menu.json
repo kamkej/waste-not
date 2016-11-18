@@ -1,22 +1,22 @@
 [
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/menu/delitem.xml",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/src/main/res/menu/delitem.xml"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/menu/decks.xml",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/menu/decks.xml"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/menu/decks.xml",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/src/main/res/menu/decks.xml"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/menu/wishmenu.xml",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/menu/wishmenu.xml"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/menu/wishmenu.xml",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/src/main/res/menu/wishmenu.xml"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/menu/activity_main_drawer.xml"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/src/main/res/menu/activity_main_drawer.xml"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/menu/delitem.xml",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/menu/delitem.xml"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/menu/main.xml",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/src/main/res/menu/main.xml"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/menu/main.xml"
     }
 ]

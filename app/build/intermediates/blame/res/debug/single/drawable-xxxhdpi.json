@@ -1,30 +1,30 @@
 [
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_home.png",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_home.png"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_have.png",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_have.png"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_wanted_list_black.png",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_wanted_list_black.png"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_edit.png",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_edit.png"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_wanted_list.png",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_wanted_list.png"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_wanted_list_black.png",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_wanted_list_black.png"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_edit.png",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_edit.png"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_have_black.png",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_have_black.png"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_have_black.png",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_have_black.png"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_home.png",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_home.png"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_have.png",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_have.png"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_my_deck.png",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_my_deck.png"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/WasteNot/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_my_deck.png",
-        "source": "/home/julio/AndroidStudioProjects/WasteNot/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_my_deck.png"
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_wanted_list.png",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_wanted_list.png"
     }
 ]
