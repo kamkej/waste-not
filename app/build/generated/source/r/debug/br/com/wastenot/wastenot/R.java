@@ -2383,7 +2383,7 @@ containing a value of this type.
         public static final int n7=0x7f020083;
         public static final int n8=0x7f020084;
         public static final int n9=0x7f020085;
-        public static final int notification_template_icon_bg=0x7f020096;
+        public static final int notification_template_icon_bg=0x7f020097;
         public static final int r=0x7f020086;
         public static final int rg=0x7f020087;
         public static final int roundeditext=0x7f020088;
@@ -2391,15 +2391,16 @@ containing a value of this type.
         public static final int rw=0x7f02008a;
         public static final int s=0x7f02008b;
         public static final int side_nav_bar=0x7f02008c;
-        public static final int u=0x7f02008d;
-        public static final int ub=0x7f02008e;
-        public static final int up=0x7f02008f;
-        public static final int ur=0x7f020090;
-        public static final int w=0x7f020091;
-        public static final int wb=0x7f020092;
-        public static final int whish=0x7f020093;
-        public static final int wp=0x7f020094;
-        public static final int wu=0x7f020095;
+        public static final int tx=0x7f02008d;
+        public static final int u=0x7f02008e;
+        public static final int ub=0x7f02008f;
+        public static final int up=0x7f020090;
+        public static final int ur=0x7f020091;
+        public static final int w=0x7f020092;
+        public static final int wb=0x7f020093;
+        public static final int whish=0x7f020094;
+        public static final int wp=0x7f020095;
+        public static final int wu=0x7f020096;
     }
     public static final class id {
         public static final int about=0x7f0d00ad;
@@ -2415,7 +2416,7 @@ containing a value of this type.
         public static final int action_dell=0x7f0d00a8;
         public static final int action_divider=0x7f0d009b;
         public static final int action_edit=0x7f0d00a9;
-        public static final int action_have=0x7f0d00ab;
+        public static final int action_have=0x7f0d00ac;
         public static final int action_menu_divider=0x7f0d0002;
         public static final int action_menu_presenter=0x7f0d0003;
         public static final int action_mode_bar=0x7f0d0059;
@@ -2423,7 +2424,7 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f0d003e;
         public static final int action_settings=0x7f0d00ae;
         public static final int action_share=0x7f0d00aa;
-        public static final int action_wanted=0x7f0d00ac;
+        public static final int action_wanted=0x7f0d00ab;
         public static final int activity_chooser_view_content=0x7f0d003f;
         public static final int adjust_height=0x7f0d0033;
         public static final int adjust_width=0x7f0d0034;

@@ -170,11 +170,21 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
 
         }else if(id==R.id.action_share){
 
+            List<String> links = new ArrayList<>();
 
+            for (String idc : decksSelect) {
+              //      links.add(deckList.get(Integer.parseInt(idc)).getDeckName());
+                    links.addAll(db.getShareCards(idc));
+
+            }
+
+            String shareCads = links.toString().replace(",","\n");
+            shareCads = shareCads.replace("[","");
+            shareCads = shareCads.replace("]","");
 
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
-            sendIntent.putExtra(Intent.EXTRA_TEXT, "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=141988&type=card");
+            sendIntent.putExtra(Intent.EXTRA_TEXT,shareCads );
             sendIntent.setType("text/plain");
             startActivity(sendIntent);
 

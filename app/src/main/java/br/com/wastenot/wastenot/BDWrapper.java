@@ -511,6 +511,21 @@ public class BDWrapper extends SQLiteOpenHelper {
         return  deckList;
 
     }
+    public List<String> getShareCards(String id){
+        String sql= "select name from cards_deck cd left join cards c on cd.card_id=c.id where cd.deck_id="+id+" group by c.name;";
+        ArrayList<String> cards = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(sql, null);
+
+        if(cursor.moveToFirst()){
+            do{
+                cards.add(cursor.getString(0));
+
+            }while (cursor.moveToNext());
+        }
+
+        return cards;
+    }
 
 }
 

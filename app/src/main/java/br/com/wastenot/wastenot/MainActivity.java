@@ -247,7 +247,7 @@ public class MainActivity extends AppCompatActivity
         } else if(id == R.id.action_have){
             for (String idc  : cardsSelect) {
                 Log.d("id", idc);
-                db.updateCard(idc,"0","1");
+                db.updateCard(idc,"1","0");
             }
 
             adapter.notifyDataSetChanged();
@@ -267,7 +267,7 @@ public class MainActivity extends AppCompatActivity
         }else if(id==R.id.action_wanted){
             for (String idc  : cardsSelect) {
                 Log.d("id", idc);
-                db.updateCard(idc,"1","0");
+                db.updateCard(idc,"0","1");
             }
 
             adapter.notifyDataSetChanged();

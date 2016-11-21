@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_have"
+        android:id="@+id/action_wanted"
         android:icon="@drawable/ic_wanted_list"
         android:title="wish"
         app:showAsAction='never'
         android:visible="false"
         />
     <item
-        android:id="@+id/action_wanted"
+        android:id="@+id/action_have"
         android:icon="@drawable/ic_have"
         android:title="Have"
         app:showAsAction='never'

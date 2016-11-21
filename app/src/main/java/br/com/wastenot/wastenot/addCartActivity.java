@@ -51,6 +51,8 @@ public class addCartActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "One card was successfully added to " + deckName + " deck", Toast.LENGTH_LONG).show();
 
                 }
+                cardsSelect.removeAll(cardsSelect);
+
             }
         });
         list.setChoiceMode(list.CHOICE_MODE_MULTIPLE);

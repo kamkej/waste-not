@@ -201,7 +201,7 @@ public class DeckDetail extends AppCompatActivity {
                     img = R.drawable.gw;
                     break;
                 default:
-                    img = R.drawable.ic_home;
+                    img = R.drawable.c;
             }
 
 
