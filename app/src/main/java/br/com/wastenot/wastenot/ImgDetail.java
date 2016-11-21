@@ -7,6 +7,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -22,15 +23,14 @@ public class ImgDetail extends AppCompatActivity {
         setContentView(R.layout.activity_img_detail);
 
         Intent intent = getIntent();
-       // Bitmap bitmap = (Bitmap) intent.getParcelableExtra("img");
+        String link =  intent.getStringExtra("img");
+        Log.d("link",link);
         imgCard = (ImageView)findViewById(R.id.imgDetail);
-        //BitmapDrawable bitmapDrawable = new BitmapDrawable(getResources(), bitmap);
-      //  imgCard.setBackground(bitmapDrawable);
-        new CardDetail.LoadImage().execute("http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + cards.getMultiverseid() + "&type=card");
+        new LoadImage().execute(link);
 
     }
 
-    private class LoadImage extends AsyncTask<String, String, Bitmap> {
+    public class LoadImage extends AsyncTask<String, String, Bitmap> {
 
         Bitmap bitmap;
 

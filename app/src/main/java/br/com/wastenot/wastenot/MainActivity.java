@@ -120,6 +120,18 @@ public class MainActivity extends AppCompatActivity
                 case "G,W":
                     img = R.drawable.gw;
                     break;
+                case "0":
+                    img = R.drawable.n0;
+                    break;
+                case "1":
+                    img = R.drawable.n1;
+                    break;
+                case "2":
+                    img = R.drawable.n2;
+                    break;
+                case "3":
+                    img = R.drawable.n3;
+                    break;
                 default:
                     img = R.drawable.c;
             }

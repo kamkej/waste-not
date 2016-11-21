@@ -8,9 +8,11 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -34,6 +36,7 @@ public class CardDetail extends AppCompatActivity {
     ImageButton imgCard;
     TextView textViewLoad;
     private ProgressBar mProgress;
+    Cards cards;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -45,24 +48,22 @@ public class CardDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_card_detail);
         Intent intent = getIntent();
-        Cards cards = (Cards) intent.getSerializableExtra("cards");
+        cards = (Cards) intent.getSerializableExtra("cards");
 
         RelativeLayout layout = (RelativeLayout) findViewById(id.layoutid);
         layout.setBackgroundResource(drawable.roundeditext);
 
         LinearLayout border = (LinearLayout) findViewById(id.layoutBorder);
         int color;
-        if(cards.getBorder().equalsIgnoreCase("black")) {
-             color = R.color.black;
-        }else if (cards.getBorder().equalsIgnoreCase("silver")){
-             color = R.color.silver;
-        }else if(cards.getBorder().equalsIgnoreCase("white")){
-             color = R.color.white;
-        }else {
-             color = R.color.black;
+        if (cards.getBorder().equalsIgnoreCase("black")) {
+            color = R.color.black;
+        } else if (cards.getBorder().equalsIgnoreCase("silver")) {
+            color = R.color.silver;
+        } else if (cards.getBorder().equalsIgnoreCase("white")) {
+            color = R.color.white;
+        } else {
+            color = R.color.black;
         }
-
-
 
 
         border.setBackgroundColor(ContextCompat.getColor(this, color));
@@ -72,16 +73,8 @@ public class CardDetail extends AppCompatActivity {
         TextView title = (TextView) findViewById(id.txtTitle);
         TextView text = (TextView) findViewById(id.txtText);
         //TextView mana = (TextView) findViewById(id.txtMana);
-        ImageView mana0= (ImageView) findViewById(id.imgMana0);
-        ImageView mana1= (ImageView) findViewById(id.imgMana1);
-        ImageView mana2= (ImageView) findViewById(id.imgMana2);
-        ImageView mana3= (ImageView) findViewById(id.imgMana3);
-        ImageView mana4= (ImageView) findViewById(id.imgMana4);
-        ImageView mana5= (ImageView) findViewById(id.imgMana5);
-        ImageView mana6= (ImageView) findViewById(id.imgMana6);
-        ImageView mana7= (ImageView) findViewById(id.imgMana7);
-        ImageView mana8= (ImageView) findViewById(id.imgMana8);
-        ImageView mana9= (ImageView) findViewById(id.imgMana9);
+        // ImageView mana0= (ImageView) findViewById(id.imgMana0);
+
         TextView type = (TextView) findViewById(id.txtType);
         TextView flavor = (TextView) findViewById(id.txtFlavor);
         TextView artist = (TextView) findViewById(id.txtArtist);
@@ -90,19 +83,142 @@ public class CardDetail extends AppCompatActivity {
         TextView pt = (TextView) findViewById(id.txtPT);
 
 
-
         imgCard = (ImageButton) findViewById(id.imgcard);
 
 
         title.setText(cards.getName());
         text.setText(cards.getText());
-      //  mana.setText(cards.getManaCost());
-        String[] manacost;
-        manacost = cards.getManaCost().split(",");
-        Log.d("mana",manacost[0]);
-        Log.d("n",String.valueOf(manacost.length));
+        //  mana.setText(cards.getManaCost());
+        String[] manacost = cards.getManaCost().split(",");
+        // Log.d("mana",manacost[0]);
+        // Log.d("n",String.valueOf(manacost.length));
+        //   mana0.setImageResource(drawable.b);
+        for (int i=0; i < manacost.length; i++){
+            ImageView mana = new ImageView(this);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(48, 48);
+            mana.setLayoutParams(layoutParams);
+            LinearLayout layout1mana = (LinearLayout) findViewById(id.layoutmana);
+            switch (manacost[i])
+            {
+                case "U":
+                    mana.setImageResource(drawable.u);
+                    break;
+                case "R":
+                    mana.setImageResource(drawable.r);
+                    break;
+                case "G":
+                    mana.setImageResource(drawable.g);
+                    break;
+                case "B":
+                    mana.setImageResource(drawable.b);
+                    break;
+                case "W":
+                    mana.setImageResource(drawable.w);
+                    break;
+                case "U/B":
+                    mana.setImageResource(drawable.ub);
+                    break;
+                case "B/G":
+                    mana.setImageResource(drawable.bg);
+                    break;
+                case "R/G":
+                    mana.setImageResource(drawable.rg);
+                    break;
+                case "W/B":
+                    mana.setImageResource(drawable.wb);
+                    break;
+                case "U/R":
+                    mana.setImageResource(drawable.ur);
+                    break;
+                case "G/U":
+                    mana.setImageResource(drawable.gu);
+                    break;
+                case "W/U":
+                    mana.setImageResource(drawable.wu);
+                    break;
+                case "R/W":
+                    mana.setImageResource(drawable.rw);
+                    break;
+                case "W/R":
+                    mana.setImageResource(drawable.rw);
+                    break;
+                case "B/R":
+                    mana.setImageResource(drawable.br);
+                    break;
+                case "G/lW":
+                    mana.setImageResource(drawable.gw);
+                    break;
+                case "0":
+                    mana.setImageResource(drawable.n0);
+                    break;
+                case "1":
+                    mana.setImageResource(drawable.n1);
+                    break;
+                case "2":
+                    mana.setImageResource(drawable.n2);
+                    break;
+                case "3":
+                    mana.setImageResource(drawable.n3);
+                    break;
+                case "4":
+                    mana.setImageResource(drawable.n4);
+                    break;
+                case "5":
+                    mana.setImageResource(drawable.n5);
+                    break;
+                case "6":
+                    mana.setImageResource(drawable.n6);
+                    break;
+                case "7":
+                    mana.setImageResource(drawable.n7);
+                    break;
+                case "8":
+                    mana.setImageResource(drawable.n8);
+                    break;
+                case "9":
+                    mana.setImageResource(drawable.n9);
+                    break;
+                case "10":
+                    mana.setImageResource(drawable.n10);
+                    break;
+                case "11":
+                    mana.setImageResource(drawable.n11);
+                    break;
+                case "12":
+                    mana.setImageResource(drawable.n12);
+                    break;
+                case "13":
+                    mana.setImageResource(drawable.n13);
+                    break;
+                case "14":
+                    mana.setImageResource(drawable.n14);
+                case "15":
+                    mana.setImageResource(drawable.n15);
+                    break;
+                case "16":
+                    mana.setImageResource(drawable.n16);
+                    break;
+                case "17":
+                    mana.setImageResource(drawable.n17);
+                    break;
+                case "18":
+                    mana.setImageResource(drawable.n18);
+                    break;
+                case "19":
+                    mana.setImageResource(drawable.n19);
+                    break;
+                case "20":
+                    mana.setImageResource(drawable.n20);
+                    break;
+                default:
+                    mana.setImageResource(0);
+            }
 
-        mana0.setImageResource(drawable.b);
+
+            layout1mana.addView(mana);
+        }
+
+
         type.setText(cards.getType());
         flavor.setText(cards.getFlavor());
         artist.setText(cards.getArtist());
