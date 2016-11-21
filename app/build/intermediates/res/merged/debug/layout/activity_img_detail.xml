@@ -12,6 +12,6 @@
         android:layout_width="320sp"
         android:layout_height="445sp"
         android:contentDescription="Teste"
-        android:background="@android:color/transparent"/>
+        />
 
 </LinearLayout>

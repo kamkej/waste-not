@@ -3,6 +3,7 @@ package br.com.wastenot.wastenot;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -23,6 +25,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.io.InputStream;
 import java.net.URL;
+import java.util.ArrayList;
 
 import static br.com.wastenot.wastenot.R.*;
 
@@ -68,7 +71,17 @@ public class CardDetail extends AppCompatActivity {
 
         TextView title = (TextView) findViewById(id.txtTitle);
         TextView text = (TextView) findViewById(id.txtText);
-        TextView mana = (TextView) findViewById(id.txtMana);
+        //TextView mana = (TextView) findViewById(id.txtMana);
+        ImageView mana0= (ImageView) findViewById(id.imgMana0);
+        ImageView mana1= (ImageView) findViewById(id.imgMana1);
+        ImageView mana2= (ImageView) findViewById(id.imgMana2);
+        ImageView mana3= (ImageView) findViewById(id.imgMana3);
+        ImageView mana4= (ImageView) findViewById(id.imgMana4);
+        ImageView mana5= (ImageView) findViewById(id.imgMana5);
+        ImageView mana6= (ImageView) findViewById(id.imgMana6);
+        ImageView mana7= (ImageView) findViewById(id.imgMana7);
+        ImageView mana8= (ImageView) findViewById(id.imgMana8);
+        ImageView mana9= (ImageView) findViewById(id.imgMana9);
         TextView type = (TextView) findViewById(id.txtType);
         TextView flavor = (TextView) findViewById(id.txtFlavor);
         TextView artist = (TextView) findViewById(id.txtArtist);
@@ -83,7 +96,13 @@ public class CardDetail extends AppCompatActivity {
 
         title.setText(cards.getName());
         text.setText(cards.getText());
-        mana.setText(cards.getManaCost());
+      //  mana.setText(cards.getManaCost());
+        String[] manacost;
+        manacost = cards.getManaCost().split(",");
+        Log.d("mana",manacost[0]);
+        Log.d("n",String.valueOf(manacost.length));
+
+        mana0.setImageResource(drawable.b);
         type.setText(cards.getType());
         flavor.setText(cards.getFlavor());
         artist.setText(cards.getArtist());
@@ -169,7 +188,9 @@ public class CardDetail extends AppCompatActivity {
 
         protected void onPostExecute(final Bitmap bitmap) {
             if (bitmap != null) {
-                imgCard.setImageBitmap(bitmap);
+
+                BitmapDrawable bitmapDrawable = new BitmapDrawable(getResources(), bitmap);
+                imgCard.setBackground(bitmapDrawable);
                 mProgress.setVisibility(View.INVISIBLE);
                 textViewLoad.setVisibility(View.INVISIBLE);
 
@@ -177,7 +198,7 @@ public class CardDetail extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = (new Intent(getApplicationContext(), ImgDetail.class));
-                        intent.putExtra("img", bitmap);
+                        intent.putExtra("img", "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + cards.getMultiverseid() + "&type=card");
                         startActivity(intent);
 
                     }

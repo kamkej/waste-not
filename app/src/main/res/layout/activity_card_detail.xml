@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:id="@+id/layoutBorder"
     android:padding="10dp"
+    android:orientation="vertical">
 
-    >
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#fff"
@@ -20,39 +20,94 @@
         tools:context="br.com.wastenot.wastenot.CardDetail"
         android:id="@+id/layoutid"
         >
-        <ImageButton
-            android:layout_width="130dp"
-            android:layout_height="160dp"
-            android:id="@+id/imgcard"
-            android:layout_below="@+id/progressBar"
-            android:layout_alignParentStart="true"
-            android:background="#aaaaaa"/>
+        <LinearLayout
+            android:id="@+id/layoutmana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/txtTitle"
+                android:textAlignment="center"
+                android:paddingRight="5dp"
+                android:textSize="24dp"
+                />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana9"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana8"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana7"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana6"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana5"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana4"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana3"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana2"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana1"
+                android:adjustViewBounds="false" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logo_app"
+                android:id="@+id/imgMana0"
+                android:adjustViewBounds="false" />
+
+        </LinearLayout>
+
         <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@android:style/Widget.ProgressBar.Small"
             android:id="@+id/progressBar"
-            android:layout_below="@+id/txtTitle"
-            android:layout_alignParentStart="true" />
-        <TextView
-            android:id="@+id/txtLoading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Loading...."
-            android:layout_below="@+id/txtTitle"
-            android:layout_toEndOf="@+id/progressBar" />
+            />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/txtTitle"
-            android:textAlignment="center"
-            android:textSize="24dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_toStartOf="@+id/txtMana" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,15 +117,6 @@
             android:id="@+id/txtText"
             android:layout_below="@+id/txtType"
             android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/txtMana"
-            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true" />
 
         <TextView
@@ -131,8 +177,29 @@
             android:layout_alignParentStart="true"
             android:textStyle="bold" />
 
-    </RelativeLayout>
+        <TextView
+            android:id="@+id/txtLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading...."
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layoutmana" />
 
+        <ImageButton
+            android:layout_width="147dp"
+            android:layout_height="210dp"
+            android:id="@+id/imgcard"
+            android:background="#aaffff"
+            android:layout_below="@+id/txtLoading"
+            android:layout_alignLeft="@+id/layoutmana"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false" />
+
+    </RelativeLayout>
 
 
 </LinearLayout>

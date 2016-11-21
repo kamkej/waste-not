@@ -16,10 +16,6 @@
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/layout/nav_header_novocla.xml",
-        "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/layout/nav_header_novocla.xml"
-    },
-    {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_action_bar_title_item.xml"
     },

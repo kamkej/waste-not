@@ -12,30 +12,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_14c0e2dd0444ec31e6a1a555279ea2a91e0f2436/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="6e239441500605809818997dd63b62a947195f8c">
         <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.0_9538972e0cc439d12419ec0c15aea4ed36e33902/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
-        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.2.0_8dd3c9469d57ba83a0c1b1ce6b1861d719333ef2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -52,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="fa238f7df987a6fa6fb590bc92227597a4aadc35">
+        sha1="04b8c600843ab5141b0410fca270bac2edf1b19d">
         <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b088f42a9beb6012d288cbc57bf44825f82c1d6a/classes.dex" />
     </item>
     <item
@@ -70,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="c0297cc7978879cc90fdb217e1e28dd4eb7d3279">
+        sha1="37d9e52148ac7f8e463521d06a6f7fd57710cbdd">
         <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bf16e54fc8b3a9fe3c9351824d6e462a4a2f5a45/classes.dex" />
     </item>
     <item
@@ -90,6 +72,24 @@
         revision="23.0.1"
         sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
         <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.0_9b4e7962e298590fc3ef99974a2f381c9e5805f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_14c0e2dd0444ec31e6a1a555279ea2a91e0f2436/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
+        <dex dex="/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.2.0_8dd3c9469d57ba83a0c1b1ce6b1861d719333ef2/classes.dex" />
     </item>
     <item
         is-multidex="true"

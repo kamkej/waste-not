@@ -8,12 +8,12 @@
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_edit.png"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_wanted_list_black.png",
-        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_wanted_list_black.png"
-    },
-    {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_have_black.png",
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_have_black.png"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_wanted_list_black.png",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_wanted_list_black.png"
     },
     {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_home.png",
