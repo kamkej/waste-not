@@ -36,6 +36,14 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
     List<String> decksSelect = new ArrayList<String>();
 
     @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        adapter.notifyDataSetChanged();
+        adapter.updateList(updateDeckList());
+        getDesks();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_deck);
@@ -173,7 +181,7 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
             List<String> links = new ArrayList<>();
 
             for (String idc : decksSelect) {
-              //      links.add(deckList.get(Integer.parseInt(idc)).getDeckName());
+                    links.add("<<<"+db.getDeckName(idc)+">>>");
                     links.addAll(db.getShareCards(idc));
 
             }

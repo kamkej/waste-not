@@ -28,6 +28,13 @@ public class DeckDetail extends AppCompatActivity {
     List<Cards> cardsList;
     Deck deck;
 
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        adapter.notifyDataSetChanged();
+        adapter.updateList(updateCardList());
+        getCards();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

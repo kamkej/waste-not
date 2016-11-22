@@ -24,7 +24,7 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
     BDWrapper db;
     ListView list;
     List<Cards> cardsList;
-    MenuItem dell,have;
+    MenuItem dell,have,share;
     List<String> cardsSelect = new ArrayList<String>();
     List<ItemListView> itens = new ArrayList<ItemListView>();
     AdapterListView adapter;
@@ -54,23 +54,39 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
                 if (cardsSelect.contains(cardsList.get(position).getId())) {
-                    cardsSelect.remove(cardsSelect.indexOf(cardsList.get(position).getId()));
+
+                    cardsSelect.remove(cardsSelect.indexOf(String.valueOf(cardsList.get(position).getId())));
                     view.setBackgroundColor(0);
+                    if (cardsSelect.size()==1){
+                        dell.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+                        dell.setVisible(true);
+                        have.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+                        have.setVisible(true);
+                    }
                     if (cardsSelect.isEmpty()) {
                         dell.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
                         dell.setVisible(false);
+                        have.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+                        have.setVisible(false);
 
 
                     }
+                } else if (!cardsSelect.isEmpty()) {
+
+                    cardsSelect.add(String.valueOf(cardsList.get(position).getId()));
+                    view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
                 } else {
                     Cards card = cardsList.get(position);
                     Intent intent = (new Intent(getApplicationContext(), CardDetail.class));
                     intent.putExtra("cards", card);
                     startActivity(intent);
+
+
                 }
+
+
+
             }
         });
         list.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -170,7 +186,7 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
         getMenuInflater().inflate(R.menu.wishmenu, menu);
         dell = menu.findItem(R.id.action_dell);
         have = menu.findItem(R.id.action_have);
-
+        share = menu.findItem(R.id.action_share);
         return true;
     }
     @Override
@@ -226,6 +242,40 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
              }
              cardsSelect.removeAll(cardsSelect);
 
+         }else if(id==R.id.action_share){
+             StringBuilder shareCads = new StringBuilder("<<<My Wantsl>>>\n");
+             List<Cards> links = new ArrayList<>();
+             links = db.getHaveCard();
+
+             if(cardsSelect.size()==0) {
+                 for (Cards card : links) {
+
+                     shareCads.append("\t" + card.getName() + "\n");
+                 }
+
+             }else{
+                 for (String card : cardsSelect) {
+
+                     shareCads.append("\t"+db.getCardbyid(card).getName()+"\n");
+
+                 }
+
+             }
+             Intent sendIntent = new Intent();
+             sendIntent.setAction(Intent.ACTION_SEND);
+             sendIntent.putExtra(Intent.EXTRA_TEXT, shareCads.toString());
+             sendIntent.setType("text/plain");
+             startActivity(sendIntent);
+
+             adapter.notifyDataSetChanged();
+             adapter.updateList(updateCardList());
+             have.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+             have.setVisible(false);
+             dell.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+             dell.setVisible(false);
+             cardsList.removeAll(cardsList);
+             getCards();
+
          }
 
         return super.onOptionsItemSelected(item);
@@ -234,6 +284,9 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         //       menu.findItem(R.id.action_favorite).setVisible(true);
+        share.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        share.setVisible(true);
+
         return super.onPrepareOptionsMenu(menu);
 
     }

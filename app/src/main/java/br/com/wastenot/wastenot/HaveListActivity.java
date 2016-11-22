@@ -24,8 +24,7 @@ public class HaveListActivity extends AppCompatActivity implements NavigationVie
     BDWrapper db;
     ListView list;
     List<Cards> cardsList;
-    MenuItem dell;
-    MenuItem have,wanted;
+    MenuItem dell,share;
     List<String> cardsSelect = new ArrayList<String>();
     List<ItemListView> itens = new ArrayList<ItemListView>();
     AdapterListView adapter;
@@ -50,21 +49,33 @@ public class HaveListActivity extends AppCompatActivity implements NavigationVie
         db = new BDWrapper(this);
         getCards();
 
+
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-
                 if (cardsSelect.contains(cardsList.get(position).getId())) {
-                    cardsSelect.remove(cardsSelect.indexOf(cardsList.get(position).getId()));
+
+                    cardsSelect.remove(cardsSelect.indexOf(String.valueOf(cardsList.get(position).getId())));
                     view.setBackgroundColor(0);
+                    if (cardsSelect.size()==1){
+                        dell.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+                        dell.setVisible(true);
+                    }
                     if (cardsSelect.isEmpty()) {
-                        have.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-                        have.setVisible(false);
-                        wanted.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-                        wanted.setVisible(false);
+                        dell.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+                        dell.setVisible(false);
+
 
                     }
+                } else if (!cardsSelect.isEmpty()) {
+
+                  //  dell.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+                  //  dell.setVisible(false);
+
+
+                    cardsSelect.add(String.valueOf(cardsList.get(position).getId()));
+                    view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
                 } else {
                     Cards card = cardsList.get(position);
                     Intent intent = (new Intent(getApplicationContext(), CardDetail.class));
@@ -168,6 +179,8 @@ public class HaveListActivity extends AppCompatActivity implements NavigationVie
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.delitem, menu);
         dell = menu.findItem(R.id.action_dell);
+        share = menu.findItem(R.id.action_share);
+
 
         return true;
     }
@@ -197,6 +210,40 @@ public class HaveListActivity extends AppCompatActivity implements NavigationVie
                 Toast.makeText(this, "One item was successfully deleted from my cards list", Toast.LENGTH_LONG).show();
             }
             cardsSelect.removeAll(cardsSelect);
+        }else if(id==R.id.action_share){
+            StringBuilder shareCads = new StringBuilder("<<<My Cards>>>\n");
+            List<Cards> links = new ArrayList<>();
+            links = db.getHaveCard();
+        
+            if(cardsSelect.size()==0) {
+                for (Cards card : links) {
+
+                    shareCads.append("\t" + card.getName() + "\n");
+                }
+
+            }else{
+                for (String card : cardsSelect) {
+
+                   shareCads.append("\t"+db.getCardbyid(card).getName()+"\n");
+
+                }
+
+            }
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, shareCads.toString());
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
+
+            adapter.notifyDataSetChanged();
+            adapter.updateList(updateCardList());
+            dell.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+            dell.setVisible(false);
+            cardsList.removeAll(cardsList);
+            getCards();
+
+
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -204,7 +251,10 @@ public class HaveListActivity extends AppCompatActivity implements NavigationVie
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        //       menu.findItem(R.id.action_favorite).setVisible(true);
+
+        share.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        share.setVisible(true);
+
         return super.onPrepareOptionsMenu(menu);
 
     }

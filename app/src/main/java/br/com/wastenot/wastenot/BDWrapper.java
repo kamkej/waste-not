@@ -131,13 +131,14 @@ public class BDWrapper extends SQLiteOpenHelper {
       //  onCreate(db);
     }
 
-    public Cards getCard(int id){
+    public Cards getCardbyid(String id){
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE,new String[]{KEY_ID,KEY_NAME},KEY_ID + "=?", new String[] {String.valueOf(id)},null,null,null,null );
         if(cursor != null)
             cursor.moveToFirst();
         Cards cards = new Cards();
+        cards.setName(cursor.getString(1));
         return cards;
     }
     public  List<Cards> getCard(String  name){
@@ -526,6 +527,14 @@ public class BDWrapper extends SQLiteOpenHelper {
 
         return cards;
     }
+    public String getDeckName(String id){
+        String sql= "select deck_name from decks where id_deck= "+id;
+        SQLiteDatabase db = this.getReadableDatabase();
+        System.out.println(id);
+        Cursor cursor=  db.rawQuery(sql,null);
+        cursor.moveToFirst();
+        return cursor.getString(0);
 
+    }
 }
 
