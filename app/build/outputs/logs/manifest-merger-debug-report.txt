@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:2:1-57:12
+ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:2:1-65:12
 	package
 		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManif
 	android:name
 		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:7:5-55:19
+ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:7:5-63:19
 MERGED from [com.android.support:design:23.2.0] /home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.0] /home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.2.0] /home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/AndroidManifest.xml:25:5-20
@@ -73,44 +73,52 @@ ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManif
 	android:name
 		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:29:13-43
 activity#br.com.wastenot.wastenot.CardDetail
-ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:32:9-48
+ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:32:9-35:15
+	android:label
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:34:13-33
+	android:theme
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:33:13-45
 	android:name
 		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:32:19-45
 activity#br.com.wastenot.wastenot.SettingActivity
-ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:33:9-53
+ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:36:9-53
 	android:name
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:33:19-50
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:36:19-50
+activity#br.com.wastenot.wastenot.DeckDetail
+ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:38:9-41:15
+	android:label
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:39:13-34
+	android:theme
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:40:13-45
+	android:name
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:38:19-45
 meta-data#com.google.android.gms.version
-ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:38:9-40:69
+ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:47:9-49:69
 MERGED from [com.google.android.gms:play-services-basement:8.1.0] /home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:40:13-66
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:49:13-66
 	android:name
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:39:13-58
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:48:13-58
 activity#br.com.wastenot.wastenot.wantedList
-ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:42:9-45:59
+ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:51:9-54:59
 	android:label
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:44:13-63
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:53:13-63
 	android:theme
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:45:13-56
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:54:13-56
 	android:name
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:43:13-39
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:52:13-39
 activity#br.com.wastenot.wastenot.ImgDetail
-ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:46:9-48:55
+ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:55:9-57:55
 	android:theme
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:48:13-52
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:57:13-52
 	android:name
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:47:13-38
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:56:13-38
 activity#br.com.wastenot.wastenot.addCartActivity
-ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:49:9-51:55
+ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:58:9-60:55
 	android:theme
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:51:13-52
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:60:13-52
 	android:name
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:50:13-44
-activity#br.com.wastenot.wastenot.DeckDetail
-ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:52:9-53:15
-	android:name
-		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:52:19-45
+		ADDED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml:59:13-44
 uses-sdk
 INJECTED from /home/julio/AndroidStudioProjects/waste-not/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:23.2.0] /home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/AndroidManifest.xml:20:5-43

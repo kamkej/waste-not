@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity
 
                 cardsSelect.add(cardsList.get(position).getId());
 
-                view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
+              //  view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
 
                 return true;
             }

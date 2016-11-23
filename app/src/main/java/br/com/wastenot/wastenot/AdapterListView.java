@@ -1,11 +1,13 @@
 package br.com.wastenot.wastenot;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
@@ -20,6 +22,7 @@ public class AdapterListView extends BaseAdapter {
     public  AdapterListView(Context context,List<ItemListView> itens){
         this.itens = itens;
         mInflater= LayoutInflater.from(context);
+
     }
     public void updateList(List<ItemListView> itensUpdate){
         itens.clear();
@@ -58,8 +61,11 @@ public class AdapterListView extends BaseAdapter {
         }
         ItemListView item = itens.get(position);
         itemHolder.txtTitle.setText(item.getTexto());
-       itemHolder.imgIcon.setImageResource(item.getIconeRid());
+        itemHolder.imgIcon.setImageResource(item.getIconeRid());
         itemHolder.imgType.setImageResource(item.getIconeType());
+
+
+
         return view;
     }
     private class ItemSuporte{
@@ -67,4 +73,5 @@ public class AdapterListView extends BaseAdapter {
         TextView txtTitle;
         ImageView imgType;
     }
+
 }

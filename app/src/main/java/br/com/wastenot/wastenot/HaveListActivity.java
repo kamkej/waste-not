@@ -69,11 +69,6 @@ public class HaveListActivity extends AppCompatActivity implements NavigationVie
 
                     }
                 } else if (!cardsSelect.isEmpty()) {
-
-                  //  dell.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-                  //  dell.setVisible(false);
-
-
                     cardsSelect.add(String.valueOf(cardsList.get(position).getId()));
                     view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
                 } else {

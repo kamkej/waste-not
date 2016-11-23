@@ -19,8 +19,6 @@ import java.util.List;
 public class AdapterDeckCarts extends BaseAdapter {
     private LayoutInflater mInflater;
     private List<ItemDeckView> itens;
-    public List<Long> selectItem = new ArrayList<Long>();
-    private Long id = Long.valueOf(-1);
 
     public AdapterDeckCarts(Context context, List<ItemDeckView> itens){
         this.itens = itens;
@@ -28,18 +26,10 @@ public class AdapterDeckCarts extends BaseAdapter {
     }
     public void updateList(){
         itens.clear();
-   //     this.itens = itensUpdate;
-     //   notifyDataSetChanged();
-
     }
     public void updateList(Context context, List<ItemDeckView> itens,Long id){
-
-
         this.itens = itens;
-        this.id = id;
-
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
     }
 
     @Override
@@ -66,7 +56,6 @@ public class AdapterDeckCarts extends BaseAdapter {
             itemHolder.txtTitle = ((TextView) view.findViewById(R.id.itemtext));
             itemHolder.imgIcon = ((ImageView) view.findViewById(R.id.itemimgview));
             itemHolder.qtd = ((TextView) view.findViewById(R.id.txtqtd));
-            itemHolder.ln = (LinearLayout) view.findViewById(R.id.listCart);
             view.setTag(itemHolder);
         }else {
             itemHolder = (ItemSuporte) view.getTag();
@@ -75,12 +64,6 @@ public class AdapterDeckCarts extends BaseAdapter {
         itemHolder.txtTitle.setText(item.getTexto());
         itemHolder.imgIcon.setImageResource(item.getIconeRid());
         itemHolder.qtd.setText(item.getQtd());
-        if(getItemId(position)==id){
-            itemHolder.ln.setBackgroundColor(Color.GRAY);
-        }
-
-
-
 
         return view;
     }
@@ -88,7 +71,6 @@ public class AdapterDeckCarts extends BaseAdapter {
         ImageView imgIcon;
         TextView txtTitle;
         TextView qtd;
-        LinearLayout ln;
     }
 
 

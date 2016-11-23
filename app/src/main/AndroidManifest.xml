@@ -29,8 +29,17 @@
             android:name=".MyDeckActivity"
             android:label="@string/title_activity_my_deck"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CardDetail" />
+        <activity android:name=".CardDetail"
+            android:theme="@style/DeckTheme"
+            android:label="Card"
+            />
         <activity android:name=".SettingActivity" />
+
+        <activity android:name=".DeckDetail"
+            android:label="Decks"
+            android:theme="@style/DeckTheme"
+            />
+
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -49,8 +58,7 @@
         <activity
             android:name=".addCartActivity"
             android:theme="@style/Theme.UserDialog" />
-        <activity android:name=".DeckDetail"
-            />
+
 
     </application>
 

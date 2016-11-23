@@ -12,10 +12,8 @@
     tools:context="br.com.wastenot.wastenot.MainActivity"
     tools:showIn="@layout/app_bar_main"
     android:background="#fcfcfc"
-    android:orientation="vertical">
-
-
-
+    android:orientation="vertical"
+    android:id="@+id/layoutmain">
 
     <LinearLayout
         android:paddingTop="20dp"
@@ -58,12 +56,15 @@
         android:divider="#FFECEC"
         android:dividerHeight="2sp"
         android:layout_alignParentTop="@+id/imageButton"
-        android:listSelector="@drawable/listviewcolors"
+
         android:focusableInTouchMode="true"
         android:focusable="true"
-        android:choiceMode="multipleChoice">
+        android:longClickable="true"
+        android:choiceMode="multipleChoice"
+        >
 
     </ListView>
+
 
 
 </LinearLayout>

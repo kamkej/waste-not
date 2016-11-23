@@ -35,8 +35,16 @@
             android:name="br.com.wastenot.wastenot.MyDeckActivity"
             android:label="@string/title_activity_my_deck"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="br.com.wastenot.wastenot.CardDetail" />
+        <activity
+            android:name="br.com.wastenot.wastenot.CardDetail"
+            android:label="Card"
+            android:theme="@style/DeckTheme" />
         <activity android:name="br.com.wastenot.wastenot.SettingActivity" />
+        <activity
+            android:name="br.com.wastenot.wastenot.DeckDetail"
+            android:label="Decks"
+            android:theme="@style/DeckTheme" />
+
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -55,7 +63,6 @@
         <activity
             android:name="br.com.wastenot.wastenot.addCartActivity"
             android:theme="@style/Theme.UserDialog" />
-        <activity android:name="br.com.wastenot.wastenot.DeckDetail" />
     </application>
 
 </manifest>
