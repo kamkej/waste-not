@@ -2,6 +2,8 @@ package br.com.wastenot.wastenot;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,6 +48,7 @@ public class AdapterListView extends BaseAdapter {
         return position;
     }
 
+
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         ItemSuporte itemHolder;
@@ -64,14 +67,13 @@ public class AdapterListView extends BaseAdapter {
         itemHolder.imgIcon.setImageResource(item.getIconeRid());
         itemHolder.imgType.setImageResource(item.getIconeType());
 
-
-
         return view;
     }
     private class ItemSuporte{
         ImageView imgIcon;
         TextView txtTitle;
         ImageView imgType;
+        boolean select = false;
     }
 
 }

@@ -212,6 +212,10 @@
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_screen_content_include.xml"
     },
     {
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/layout/deletedeck_dialog.xml",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/layout/deletedeck_dialog.xml"
+    },
+    {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_list_menu_item_radio.xml"
     },

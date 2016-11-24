@@ -23,7 +23,7 @@ public class BDWrapper extends SQLiteOpenHelper {
     //Database
     public static final String DB_PATH = "/data/data/br.com.wastenot.wastenot/databases/";
     public static final String DATABASE_NAME= "wastenot.db";
-    public static final int DATABASE_VERSION=  1;
+    public static final int DATABASE_VERSION=  2;
     public static final String TABLE = "Cards";
     private SQLiteDatabase myDatabase;
     private final Context myContext;
@@ -99,13 +99,12 @@ public class BDWrapper extends SQLiteOpenHelper {
                 myOutput.write(buffer, 0, length);
             }
 
-            //Close the streams
             myOutput.flush();
             myOutput.close();
             myInput.close();
         }
         catch (Exception e) {
-            //catch exception
+           Log.d("Database",e.getMessage());
         }
     }
     public SQLiteDatabase openDatabase() throws  SQLDataException{
@@ -127,8 +126,7 @@ public class BDWrapper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    //    db.execSQL("DROP TABLE IF EXISTS "+TABLE);
-      //  onCreate(db);
+        copyDatabase();
     }
 
     public Cards getCardbyid(String id){

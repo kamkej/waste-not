@@ -105,8 +105,7 @@ public class DeckDetail extends AppCompatActivity {
         final EditText edt = (EditText) dialogView.findViewById(R.id.edt_deck);
         edt.setInputType(InputType.TYPE_CLASS_NUMBER);
 
-        dialogBuilder.setTitle("Delete selected cards?");
-        dialogBuilder.setMessage("How many cards should be deleted?");
+
         dialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 db.dellCardOfDeck(deck.getId(), idcard, Integer.parseInt(edt.getText().toString()));
@@ -128,10 +127,8 @@ public class DeckDetail extends AppCompatActivity {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
         final View dialogView = inflater.inflate(R.layout.delete_dialog, null);
-        dialogBuilder.setView(dialogView);
 
-        dialogBuilder.setTitle("Delete Carts");
-        dialogBuilder.setMessage("Would Like delete this card?");
+        dialogBuilder.setView(dialogView);
         dialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 db.dellCardOfDeck(deck.getId(), idcard, 1);

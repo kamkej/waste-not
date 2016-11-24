@@ -175,12 +175,15 @@ public class MainActivity extends AppCompatActivity
 
                    if (cardsSelect.contains(cardsList.get(position).getId())) {
                        cardsSelect.remove(cardsSelect.indexOf(cardsList.get(position).getId()));
-                        view.setBackgroundColor(0);
+                        //view.setBackgroundColor(0);
+
                        if(cardsSelect.isEmpty()){
                            have.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
                            have.setVisible(false);
                            wanted.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
                            wanted.setVisible(false);
+                           view.setSelected(false);
+
 
                        }
                     } else {
@@ -199,11 +202,9 @@ public class MainActivity extends AppCompatActivity
                 have.setVisible(true);
                 wanted.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
                 wanted.setVisible(true);
+                view.setSelected(true);
 
                 cardsSelect.add(cardsList.get(position).getId());
-
-              //  view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
-
                 return true;
             }
         });
