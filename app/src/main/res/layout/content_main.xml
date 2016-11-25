@@ -57,9 +57,6 @@
         android:dividerHeight="2sp"
         android:layout_alignParentTop="@+id/imageButton"
 
-        android:focusableInTouchMode="true"
-        android:focusable="true"
-        android:longClickable="true"
         android:choiceMode="multipleChoice"
         >
 

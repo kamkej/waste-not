@@ -15,7 +15,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.CheckedTextView;
 import android.widget.EditText;
+import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -42,10 +44,12 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         list = (ListView) findViewById(R.id.list);
         edts = (EditText) findViewById(R.id.edtSearch);
+
+
 
 
 
@@ -167,11 +171,17 @@ public class MainActivity extends AppCompatActivity
             adapter.updateList(updateCardList());
         }
 
+
+
         getCards();
+
+
+
+
+
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
 
                    if (cardsSelect.contains(cardsList.get(position).getId())) {
                        cardsSelect.remove(cardsSelect.indexOf(cardsList.get(position).getId()));

@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/listviewcolors"
     android:padding="5sp"
+
     >
     <ImageView
         android:id="@+id/itemimgview"
@@ -12,7 +13,7 @@
         android:layout_height="24dp"
 
         />
-    <TextView
+    <CheckedTextView
         android:id="@+id/itemtext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +22,8 @@
         android:textColor="#333"
         android:text="items"
         android:layout_weight="10"
-
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
         />
 
     <ImageView
