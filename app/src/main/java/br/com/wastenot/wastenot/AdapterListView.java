@@ -24,7 +24,7 @@ import java.util.List;
 public class AdapterListView extends BaseAdapter {
     private LayoutInflater mInflater;
     private List<ItemListView> itens;
-    private List<CheckedTextView> selects = new ArrayList<>();
+    public List<Long> selects = new ArrayList<>();
     public  AdapterListView(Context context,List<ItemListView> itens){
         this.itens = itens;
         mInflater= LayoutInflater.from(context);
@@ -56,26 +56,15 @@ public class AdapterListView extends BaseAdapter {
     @Override
     public View getView(final int position, View view, ViewGroup parent) {
         ItemSuporte itemHolder;
+
         if(view == null){
             view= mInflater.inflate(R.layout.item_list,null);
             itemHolder = new ItemSuporte();
-            itemHolder.txtTitle = ((CheckedTextView) view.findViewById(R.id.itemtext));
+            itemHolder.txtTitle = ((TextView) view.findViewById(R.id.itemtext));
             itemHolder.imgIcon = ((ImageView) view.findViewById(R.id.itemimgview));
             itemHolder.imgType = ((ImageView) view.findViewById(R.id.type));
             view.setTag(itemHolder);
-            final CheckedTextView chktxt = (CheckedTextView) view.findViewById(R.id.itemtext);
-            selects.add(chktxt);
-            chktxt.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
 
-                    if(selects.get(position).isChecked()){
-                        selects.get(position).setChecked(false);
-                    }else {
-                        selects.get(position).setChecked(true);
-                    }
-                }
-            });
         }else {
             itemHolder = (ItemSuporte) view.getTag();
         }
@@ -85,12 +74,17 @@ public class AdapterListView extends BaseAdapter {
         itemHolder.imgType.setImageResource(item.getIconeType());
 
 
+        if(selects.contains(this.getItemId(position))){
+           view.setBackgroundColor(ContextCompat.getColor(view.getContext(), R.color.itemselect));
+        }else {
+           view.setBackgroundColor(0);
+        }
 
         return view;
     }
     private class ItemSuporte{
         ImageView imgIcon;
-        CheckedTextView txtTitle;
+        TextView txtTitle;
         ImageView imgType;
     }
 

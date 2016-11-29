@@ -112,12 +112,12 @@
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/drawable/rw.png"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/abc_btn_checkbox_checked_mtrl.xml",
-        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/drawable/abc_btn_checkbox_checked_mtrl.xml"
-    },
-    {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/whish.png",
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/drawable/whish.png"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/abc_btn_checkbox_checked_mtrl.xml",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/drawable/abc_btn_checkbox_checked_mtrl.xml"
     },
     {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/c.png",
@@ -244,12 +244,12 @@
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/drawable/abc_btn_check_material.xml"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/drawable/abc_seekbar_track_material.xml"
-    },
-    {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/n2r.png",
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/drawable/n2r.png"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/n1.png",

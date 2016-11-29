@@ -13,7 +13,7 @@
         android:layout_height="24dp"
 
         />
-    <CheckedTextView
+    <TextView
         android:id="@+id/itemtext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,6 @@
         android:textColor="#333"
         android:text="items"
         android:layout_weight="10"
-        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
         android:checked="false"
         />
 
