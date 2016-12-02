@@ -75,9 +75,11 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 if (decksSelect.contains(String.valueOf(deckList.get(position).getId()))) {
-
                     decksSelect.remove(decksSelect.indexOf(String.valueOf(deckList.get(position).getId())));
-                    view.setBackgroundColor(0);
+                    adapter.selects.remove(adapter.selects.indexOf(adapter.getItemId(position)));
+                    adapter.notifyDataSetChanged();
+
+
                     if (decksSelect.size()==1){
                         edit.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
                         edit.setVisible(true);
@@ -90,15 +92,16 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
                             share.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
                             share.setVisible(false);
 
+
                         }
                 } else if (!decksSelect.isEmpty()) {
 
                     edit.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
                     edit.setVisible(false);
-
-
                     decksSelect.add(String.valueOf(deckList.get(position).getId()));
-                    view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
+                    adapter.selects.add(adapter.getItemId(position));
+                    adapter.notifyDataSetChanged();
+
                 } else {
                     Deck deck = deckList.get(position);
 
@@ -128,7 +131,8 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
                     edit.setVisible(false);
                 }
 
-                view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
+                adapter.selects.add(adapter.getItemId(position));
+                adapter.notifyDataSetChanged();
 
                 return true;
             }

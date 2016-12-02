@@ -178,22 +178,43 @@ public class DeckDetail extends AppCompatActivity {
                 case "U,B":
                     img = R.drawable.ub;
                     break;
+                case "B,U":
+                    img = R.drawable.ub;
+                    break;
                 case "B,G":
+                    img = R.drawable.bg;
+                    break;
+                case "G,B":
                     img = R.drawable.bg;
                     break;
                 case "R,G":
                     img = R.drawable.rg;
                     break;
+                case "G,R":
+                    img = R.drawable.rg;
+                    break;
                 case "W,B":
+                    img = R.drawable.wb;
+                    break;
+                case "B,W":
                     img = R.drawable.wb;
                     break;
                 case "U,R":
                     img = R.drawable.ur;
                     break;
+                case "R,U":
+                    img = R.drawable.ur;
+                    break;
                 case "G,U":
                     img = R.drawable.gu;
                     break;
+                case "U,G":
+                    img = R.drawable.gu;
+                    break;
                 case "W,U":
+                    img = R.drawable.wu;
+                    break;
+                case "U,W":
                     img = R.drawable.wu;
                     break;
                 case "R,W":
@@ -205,7 +226,13 @@ public class DeckDetail extends AppCompatActivity {
                 case "B,R":
                     img = R.drawable.br;
                     break;
+                case "R,B":
+                    img = R.drawable.br;
+                    break;
                 case "G,W":
+                    img = R.drawable.gw;
+                    break;
+                case "W,G":
                     img = R.drawable.gw;
                     break;
                 default:

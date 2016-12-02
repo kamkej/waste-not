@@ -2,6 +2,7 @@ package br.com.wastenot.wastenot;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,7 @@ import java.util.List;
 public class AdapterDeckCarts extends BaseAdapter {
     private LayoutInflater mInflater;
     private List<ItemDeckView> itens;
+    public  List<Long> selects = new ArrayList<>();
 
     public AdapterDeckCarts(Context context, List<ItemDeckView> itens){
         this.itens = itens;
@@ -64,6 +66,11 @@ public class AdapterDeckCarts extends BaseAdapter {
         itemHolder.txtTitle.setText(item.getTexto());
         itemHolder.imgIcon.setImageResource(item.getIconeRid());
         itemHolder.qtd.setText(item.getQtd());
+        if(selects.contains(this.getItemId(position))){
+            view.setBackgroundColor(ContextCompat.getColor(view.getContext(), R.color.itemselect));
+        }else {
+            view.setBackgroundColor(0);
+        }
 
         return view;
     }

@@ -1,7 +1,7 @@
-#Tue Nov 29 16:18:39 BRST 2016
-base.0=/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b088f42a9beb6012d288cbc57bf44825f82c1d6a
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bf16e54fc8b3a9fe3c9351824d6e462a4a2f5a45/classes.dex
-base.1=/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bf16e54fc8b3a9fe3c9351824d6e462a4a2f5a45
-file.0=/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b088f42a9beb6012d288cbc57bf44825f82c1d6a/classes.dex
+#Fri Dec 02 17:13:10 BRST 2016
+base.0=/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bf16e54fc8b3a9fe3c9351824d6e462a4a2f5a45
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b088f42a9beb6012d288cbc57bf44825f82c1d6a/classes.dex
+base.1=/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b088f42a9beb6012d288cbc57bf44825f82c1d6a
+file.0=/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bf16e54fc8b3a9fe3c9351824d6e462a4a2f5a45/classes.dex

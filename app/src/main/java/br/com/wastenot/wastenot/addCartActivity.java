@@ -69,63 +69,30 @@ public class addCartActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-               /* if (cardsSelect.contains(String.valueOf(cardsList.get(position).getId()))) {
-
+               if (cardsSelect.contains(String.valueOf(cardsList.get(position).getId()))) {
                     cardsSelect.remove(cardsSelect.indexOf(String.valueOf(cardsList.get(position).getId())));
+                    adapter.selects.remove(adapter.selects.indexOf(adapter.getItemId(position)));
+                    adapter.notifyDataSetChanged();
 
-                    if (cardsSelect.size()>= 1) {
-                        Toast.makeText(getApplicationContext(), "Qtd"+cardsSelect.size(), Toast.LENGTH_LONG).show();
-                    }
-                    if (!cardsSelect.contains(String.valueOf(cardsList.get(position).getId()))) {
-                        view.setBackgroundColor(0);
-
-                    }
                 } else if (!cardsSelect.isEmpty()) {
-
                     cardsSelect.add(String.valueOf(cardsList.get(position).getId()));
-                    view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
-                } else {*/
+                    adapter.selects.add(adapter.getItemId(position));
+                    adapter.notifyDataSetChanged();
+                } else {
                     Cards Cards = cardsList.get(position);
                     Intent intent = (new Intent(getApplicationContext(), CardDetail.class));
                     intent.putExtra("cards", Cards);
                     startActivity(intent);
-            //    }
-
-
+                }
             }
         });
-
         list.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-
-
                 cardsSelect.add(String.valueOf(cardsList.get(position).getId()));
-                //   view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
-             //  Toast.makeText(getApplicationContext(),String.valueOf(adapter.getItemId(position)), Toast.LENGTH_LONG).show();
-              //  adapter.updateList();
-               // adapter.updateList(getApplicationContext(),updateCardList(),id);
-
-
-              //  view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
-               // Toast.makeText(getApplicationContext(), "Qtd"+cardsSelect.size(), Toast.LENGTH_LONG).show();
-/*
-
-                View v = list.getChildAt(position - list.getFirstVisiblePosition());
-
-                TextView qtd = (TextView) v.findViewById(R.id.txtqtd);
-                qtd.setText("1");
-*/
-
-             //   v.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
-//                TextView qtd = (TextView) view.findViewById(R.id.txtqtd);
-//                TextView title = (TextView)view.findViewById(R.id.itemtext);
-//                qtd.setText("1");
-//                title.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
-
-
-
+                adapter.selects.add(adapter.getItemId(position));
+                adapter.notifyDataSetChanged();
                 return true;
             }
         });
@@ -158,22 +125,43 @@ public class addCartActivity extends AppCompatActivity {
                 case "U,B":
                     img = R.drawable.ub;
                     break;
+                case "B,U":
+                    img = R.drawable.ub;
+                    break;
                 case "B,G":
+                    img = R.drawable.bg;
+                    break;
+                case "G,B":
                     img = R.drawable.bg;
                     break;
                 case "R,G":
                     img = R.drawable.rg;
                     break;
+                case "G,R":
+                    img = R.drawable.rg;
+                    break;
                 case "W,B":
+                    img = R.drawable.wb;
+                    break;
+                case "B,W":
                     img = R.drawable.wb;
                     break;
                 case "U,R":
                     img = R.drawable.ur;
                     break;
+                case "R,U":
+                    img = R.drawable.ur;
+                    break;
                 case "G,U":
                     img = R.drawable.gu;
                     break;
+                case "U,G":
+                    img = R.drawable.gu;
+                    break;
                 case "W,U":
+                    img = R.drawable.wu;
+                    break;
+                case "U,W":
                     img = R.drawable.wu;
                     break;
                 case "R,W":
@@ -185,7 +173,13 @@ public class addCartActivity extends AppCompatActivity {
                 case "B,R":
                     img = R.drawable.br;
                     break;
+                case "R,B":
+                    img = R.drawable.br;
+                    break;
                 case "G,W":
+                    img = R.drawable.gw;
+                    break;
+                case "W,G":
                     img = R.drawable.gw;
                     break;
                 default:

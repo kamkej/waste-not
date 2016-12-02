@@ -1,6 +1,7 @@
 package br.com.wastenot.wastenot;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,6 +18,7 @@ import java.util.List;
 public class AdapterDeckView extends BaseAdapter {
     private LayoutInflater mInflater;
     private List<ItemDeckView> itens;
+    public List<Long> selects = new ArrayList<>();
 
     public AdapterDeckView(Context context, List<ItemDeckView> itens){
         this.itens = itens;
@@ -70,6 +73,14 @@ public class AdapterDeckView extends BaseAdapter {
         itemHolder.txtTitle.setText(item.getTexto());
         itemHolder.imgIcon.setImageResource(item.getIconeRid());
         itemHolder.qtd.setText(item.getQtd());
+
+        if(selects.contains(this.getItemId(position))){
+            view.setBackgroundColor(ContextCompat.getColor(view.getContext(), R.color.itemselect));
+        }else {
+            view.setBackgroundColor(0);
+        }
+
+
         return view;
     }
     private class ItemSuporte{

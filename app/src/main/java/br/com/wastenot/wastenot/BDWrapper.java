@@ -64,6 +64,7 @@ public class BDWrapper extends SQLiteOpenHelper {
             boolean dbExit= checkDatabase();
             if(dbExit){
                 Log.d("msg", "exists");
+                this.backupDatabase();
             }else {
                 this.getReadableDatabase();
                 copyDatabase();
@@ -87,8 +88,6 @@ public class BDWrapper extends SQLiteOpenHelper {
         return checkDB != null ? true:false;
     }
     private void copyDatabase(){
-       // Log.d("dbi", ');
-
         try{
             InputStream myInput = myContext.getAssets().open(DATABASE_NAME);
             String outFileName = DB_PATH + DATABASE_NAME;
@@ -127,6 +126,19 @@ public class BDWrapper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         copyDatabase();
+    }
+    private void backupDatabase(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        List<String> idHaveList = new ArrayList<>();
+        String selectQuery = "SELECT id FROM  cards WHERE  haveList = '1'";
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            do{
+                idHaveList.add(cursor.getString(0));
+            }while (cursor.moveToNext());
+        }
+
     }
 
     public Cards getCardbyid(String id){

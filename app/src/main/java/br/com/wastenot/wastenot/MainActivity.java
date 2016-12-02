@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity
     String card;
     List<Cards> cardsList;
     List<String> cardsSelect = new ArrayList<String>();
-    List<Long> selects = new ArrayList<>();
     List<ItemListView> itens = new ArrayList<ItemListView>();
     AdapterListView adapter = null;
 
@@ -49,10 +48,6 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         list = (ListView) findViewById(R.id.list);
         edts = (EditText) findViewById(R.id.edtSearch);
-
-
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -95,22 +90,43 @@ public class MainActivity extends AppCompatActivity
                 case "U,B":
                     img = R.drawable.ub;
                     break;
+                case "B,U":
+                    img = R.drawable.ub;
+                    break;
                 case "B,G":
+                    img = R.drawable.bg;
+                    break;
+                case "G,B":
                     img = R.drawable.bg;
                     break;
                 case "R,G":
                     img = R.drawable.rg;
                     break;
+                case "G,R":
+                    img = R.drawable.rg;
+                    break;
                 case "W,B":
+                    img = R.drawable.wb;
+                    break;
+                case "B,W":
                     img = R.drawable.wb;
                     break;
                 case "U,R":
                     img = R.drawable.ur;
                     break;
+                case "R,U":
+                    img = R.drawable.ur;
+                    break;
                 case "G,U":
                     img = R.drawable.gu;
                     break;
+                case "U,G":
+                    img = R.drawable.gu;
+                    break;
                 case "W,U":
+                    img = R.drawable.wu;
+                    break;
+                case "U,W":
                     img = R.drawable.wu;
                     break;
                 case "R,W":
@@ -122,20 +138,14 @@ public class MainActivity extends AppCompatActivity
                 case "B,R":
                     img = R.drawable.br;
                     break;
+                case "R,B":
+                    img = R.drawable.br;
+                    break;
                 case "G,W":
                     img = R.drawable.gw;
                     break;
-                case "0":
-                    img = R.drawable.n0;
-                    break;
-                case "1":
-                    img = R.drawable.n1;
-                    break;
-                case "2":
-                    img = R.drawable.n2;
-                    break;
-                case "3":
-                    img = R.drawable.n3;
+                case "W,G":
+                    img = R.drawable.gw;
                     break;
                 default:
                     img = R.drawable.c;
@@ -186,7 +196,6 @@ public class MainActivity extends AppCompatActivity
                            have.setVisible(false);
                            wanted.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
                            wanted.setVisible(false);
-                           view.setSelected(false);
                        }
                     }else if(!cardsSelect.isEmpty()){
                        cardsSelect.add(cardsList.get(position).getId());
@@ -204,7 +213,6 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                adapter.getItemId(position);
                 have.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
                 have.setVisible(true);
                 wanted.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);

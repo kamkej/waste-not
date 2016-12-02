@@ -57,7 +57,8 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
                 if (cardsSelect.contains(cardsList.get(position).getId())) {
 
                     cardsSelect.remove(cardsSelect.indexOf(String.valueOf(cardsList.get(position).getId())));
-                    view.setBackgroundColor(0);
+                    adapter.selects.remove(adapter.selects.indexOf(adapter.getItemId(position)));
+                    adapter.notifyDataSetChanged();
                     if (cardsSelect.size()==1){
                         dell.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
                         dell.setVisible(true);
@@ -73,9 +74,9 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
 
                     }
                 } else if (!cardsSelect.isEmpty()) {
-
                     cardsSelect.add(String.valueOf(cardsList.get(position).getId()));
-                    view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
+                    adapter.selects.remove(adapter.selects.indexOf(adapter.getItemId(position)));
+                    adapter.notifyDataSetChanged();
                 } else {
                     Cards card = cardsList.get(position);
                     Intent intent = (new Intent(getApplicationContext(), CardDetail.class));
@@ -99,9 +100,8 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
                 have.setVisible(true);
 
                 cardsSelect.add(cardsList.get(position).getId());
-
-                view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.itemselect));
-
+                adapter.selects.add(adapter.getItemId(position));
+                adapter.notifyDataSetChanged();
                 return true;
             }
         });
@@ -134,22 +134,43 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
                 case "U,B":
                     img = R.drawable.ub;
                     break;
+                case "B,U":
+                    img = R.drawable.ub;
+                    break;
                 case "B,G":
+                    img = R.drawable.bg;
+                    break;
+                case "G,B":
                     img = R.drawable.bg;
                     break;
                 case "R,G":
                     img = R.drawable.rg;
                     break;
+                case "G,R":
+                    img = R.drawable.rg;
+                    break;
                 case "W,B":
+                    img = R.drawable.wb;
+                    break;
+                case "B,W":
                     img = R.drawable.wb;
                     break;
                 case "U,R":
                     img = R.drawable.ur;
                     break;
+                case "R,U":
+                    img = R.drawable.ur;
+                    break;
                 case "G,U":
                     img = R.drawable.gu;
                     break;
+                case "U,G":
+                    img = R.drawable.gu;
+                    break;
                 case "W,U":
+                    img = R.drawable.wu;
+                    break;
+                case "U,W":
                     img = R.drawable.wu;
                     break;
                 case "R,W":
@@ -161,7 +182,13 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
                 case "B,R":
                     img = R.drawable.br;
                     break;
+                case "R,B":
+                    img = R.drawable.br;
+                    break;
                 case "G,W":
+                    img = R.drawable.gw;
+                    break;
+                case "W,G":
                     img = R.drawable.gw;
                     break;
                 default:
