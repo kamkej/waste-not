@@ -108,11 +108,15 @@ public class DeckDetail extends AppCompatActivity {
 
         dialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
-                db.dellCardOfDeck(deck.getId(), idcard, Integer.parseInt(edt.getText().toString()));
-                adapter.clear();
+                if(!edt.getText().toString().isEmpty()) {
+                    db.dellCardOfDeck(deck.getId(), idcard, Integer.parseInt(edt.getText().toString()));
+                    adapter.clear();
+                    getCards();
+                    Toast.makeText(getApplicationContext(), " Cards deleted", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(getApplicationContext(), " Type quantity of cards", Toast.LENGTH_LONG).show();
+                }
 
-                getCards();
-                Toast.makeText(getApplicationContext(), " Cards deleted", Toast.LENGTH_LONG).show();
             }
         });
         dialogBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -131,6 +135,7 @@ public class DeckDetail extends AppCompatActivity {
         dialogBuilder.setView(dialogView);
         dialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
+
                 db.dellCardOfDeck(deck.getId(), idcard, 1);
                 adapter.clear();
 

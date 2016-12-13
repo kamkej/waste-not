@@ -15,6 +15,7 @@ import java.io.OutputStream;
 import java.sql.SQLDataException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * Created by ssl on 3/21/16.
@@ -23,7 +24,7 @@ public class BDWrapper extends SQLiteOpenHelper {
     //Database
     public static final String DB_PATH = "/data/data/br.com.wastenot.wastenot/databases/";
     public static final String DATABASE_NAME= "wastenot.db";
-    public static final int DATABASE_VERSION=  2;
+    public static final int DATABASE_VERSION=  6;
     public static final String TABLE = "Cards";
     private SQLiteDatabase myDatabase;
     private final Context myContext;
@@ -64,7 +65,7 @@ public class BDWrapper extends SQLiteOpenHelper {
             boolean dbExit= checkDatabase();
             if(dbExit){
                 Log.d("msg", "exists");
-                this.backupDatabase();
+
             }else {
                 this.getReadableDatabase();
                 copyDatabase();
@@ -130,13 +131,49 @@ public class BDWrapper extends SQLiteOpenHelper {
     private void backupDatabase(){
         SQLiteDatabase db = this.getReadableDatabase();
         List<String> idHaveList = new ArrayList<>();
+        List<String> idWantedList = new ArrayList<>();
+        List<Deck>  deckList = new ArrayList<>();
+        List<Cardsdeck> cardsdecks = new ArrayList<>();
         String selectQuery = "SELECT id FROM  cards WHERE  haveList = '1'";
-        Cursor cursor = db.rawQuery(selectQuery, null);
+        String whishQuery = "SELECT id FROM  cards WHERE  whishList = '1'";
+        String deckQuery = "SELECT * FROM  decks";
+        String cardsDeckQuery = "SELECT * from cards_deck";
+        Cursor cursorHave = db.rawQuery(selectQuery, null);
+        Cursor cursorWish = db.rawQuery(whishQuery, null);
+        Cursor cursorDeck = db.rawQuery(deckQuery, null);
+        Cursor cursorCardsDeck = db.rawQuery(cardsDeckQuery, null);
 
-        if(cursor.moveToFirst()){
+
+        if(cursorHave.moveToFirst()){
             do{
-                idHaveList.add(cursor.getString(0));
-            }while (cursor.moveToNext());
+                idHaveList.add(cursorHave.getString(0));
+            }while (cursorHave.moveToNext());
+        }
+        if(cursorWish.moveToFirst()){
+            do{
+                idWantedList.add(cursorWish.getString(0));
+            }while (cursorWish.moveToNext());
+        }
+        if(cursorDeck.moveToFirst()){
+            do{
+                Deck deck = new Deck();
+                deck.setId(cursorDeck.getString(0));
+                deck.setDeckName(cursorDeck.getString(1));
+                deckList.add(deck);
+            }while (cursorDeck.moveToNext());
+        }
+        if(cursorCardsDeck.moveToFirst()){
+            do{
+                Cardsdeck cardsdeck = new Cardsdeck();
+                cardsdeck.setCardid(cursorCardsDeck.getString(0));
+                cardsdeck.setDeckid(cursorCardsDeck.getString(1));
+
+                cardsdecks.add(cardsdeck);
+            }while (cursorCardsDeck.moveToNext());
+        }
+
+        for (String have:idHaveList) {
+                this.updateCard(have,"1","0");
         }
 
     }
@@ -198,10 +235,6 @@ public class BDWrapper extends SQLiteOpenHelper {
                 card.setStarter(cursor.getString(30));
                 card.setWhishlist(cursor.getString(32));
                 card.setHavelist(cursor.getString(33));
-
-
-
-
                 cardsList.add(card);
 
             }while (cursor.moveToNext());
@@ -253,11 +286,7 @@ public class BDWrapper extends SQLiteOpenHelper {
                 card.setReserved(cursor.getString(28));
                 card.setReleaseDate(cursor.getString(29));
                 card.setStarter(cursor.getString(30));
-
-
-
                 cardsList.add(card);
-
             }while (cursor.moveToNext());
         }
         return  cardsList;
@@ -272,7 +301,7 @@ public class BDWrapper extends SQLiteOpenHelper {
                ids.add(idCard.getString(1));
             }while (idCard.moveToNext());
         }*/
-        String sql = "select * from cards a join (select card_id,count(card_id)as qtd from cards_deck where deck_id="+id+" group by card_id) b on a.id=b.card_id;";
+        String sql = "select * from cards a join (select card_id,count(card_id)as qtd from cards_deck where deck_id='"+id+"' group by card_id) b on a.id=b.card_id;";
         Cursor cursor = db.rawQuery(sql, null);
 
         if(cursor.moveToFirst()) {
@@ -433,48 +462,16 @@ public class BDWrapper extends SQLiteOpenHelper {
                 card.setStarter(cursor.getString(30));
                 card.setWhishlist(cursor.getString(32));
                 card.setHavelist(cursor.getString(33));
-
-
-
-
-
                 cardsList.add(card);
-
             }while (cursor.moveToNext());
         }
         return  cardsList;
     }
-    public void addCards(Cards cards){
-        SQLiteDatabase db = this.getReadableDatabase();
-        ContentValues values = new ContentValues();
-        values.put(KEY_LAYOUT,cards.getLayout());
-        values.put(KEY_NAME,cards.getName());
-        values.put(KEY_M_C,cards.getManaCost());
-        values.put(KEY_CMC,cards.getCmc());
-     //   values.put(KEY_COLOR,cards.getColors());
-        values.put(KEY_TYPE,cards.getType());
-       // values.put(KEY_SUPER_TYPE,cards.getSupertype());
-        values.put(KEY_TYPES,cards.getTypes());
-        values.put(KEY_SUB_TYPE,cards.getSubtypes());
-        values.put(KEY_RARITY,cards.getRarity());
-        values.put(KEY_TEXT,cards.getText());
-        values.put(KEY_FLAVOR,cards.getFlavor());
-        values.put(KEY_ARTIST,cards.getArtist());
-        values.put(KEY_NUNBER,cards.getNumber());
-        values.put(KEY_POWER,cards.getPower());
-        values.put(KEY_TOUGHNESS,cards.getToughness());
-        values.put(KEY_IMG_NAME,cards.getImageName());
-        values.put(KEY_M_S_ID, cards.getMultiverseid());
-        //values.put(KEY_CARD_ID,cards.getCard_id());
-
-        db.insert(TABLE, null, values);
-        db.close();
-
-
-    }
     public void addDecks(String name){
         SQLiteDatabase db = this.getReadableDatabase();
         ContentValues values = new ContentValues();
+        String id_deck = UUID.randomUUID().toString().replaceAll("-", "");
+        values.put("id_deck",id_deck);
         values.put("deck_name",name);
         db.insert("decks",null,values);
     }
@@ -489,12 +486,12 @@ public class BDWrapper extends SQLiteOpenHelper {
         ContentValues args = new ContentValues();
         return  db.delete("decks", "id_deck=?", new String[]{id})>0;
     }
-    public void dellCardOfDeck(int iddeck,String idcard,int qtd){
-        String sql = "delete from cards_deck where rowid in(select rowid from cards_deck where deck_id="+iddeck+" and card_id='"+idcard+"' limit "+qtd+");";
+    public void dellCardOfDeck(String iddeck,String idcard,int qtd){
+        String sql = "delete from cards_deck where rowid in(select rowid from cards_deck where deck_id='"+iddeck+"' and card_id='"+idcard+"' limit "+qtd+");";
         SQLiteDatabase db = this.getReadableDatabase();
          db.execSQL(sql);
     }
-    public void addCardOnDeck(int deckid,String cardid){
+    public void addCardOnDeck(String deckid,String cardid){
         SQLiteDatabase db = this.getReadableDatabase();
         ContentValues values = new ContentValues();
         values.put("deck_id",deckid);
@@ -511,7 +508,7 @@ public class BDWrapper extends SQLiteOpenHelper {
         if(cursor.moveToFirst()){
             do{
                 Deck deck = new Deck();
-                deck.setId(cursor.getInt(0));
+                deck.setId(cursor.getString(0));
                 deck.setDeckName(cursor.getString(1));
                 deck.setQtd(cursor.getInt(2));
 

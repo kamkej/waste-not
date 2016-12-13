@@ -43,7 +43,7 @@ public class addCartActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 for (String cards : cardsSelect) {
-                   db.addCardOnDeck(Integer.parseInt(deckId),cards);
+                   db.addCardOnDeck(deckId,cards);
                 }
                 if(cardsSelect.size()>1) {
                     Toast.makeText(getApplicationContext(), "cards were successfully added to " + deckName + " deck", Toast.LENGTH_LONG).show();

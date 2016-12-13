@@ -6,15 +6,15 @@ import java.io.Serializable;
  * Created by julio on 6/8/16.
  */
 public class Deck implements Serializable {
-    private int id;
+    private String id;
     private String deckName;
     private int qtd;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
