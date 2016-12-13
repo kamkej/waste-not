@@ -170,7 +170,7 @@ public class MyDeckActivity extends AppCompatActivity implements NavigationView.
             dell.setVisible(false);
             edit.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
             edit.setVisible(false);
-            Toast.makeText(this, "items Dell successfully", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Deck removed successfully", Toast.LENGTH_LONG).show();
 
         }else if(id==R.id.action_edit){
 

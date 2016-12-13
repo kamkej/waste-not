@@ -268,9 +268,9 @@ public class MainActivity extends AppCompatActivity
             wanted.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
             wanted.setVisible(false);
             if(cardsSelect.size()>1) {
-                Toast.makeText(this, "items were successfully added to my cards list", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "items were successfully added to My Cards list", Toast.LENGTH_LONG).show();
             }else {
-                Toast.makeText(this, "One item was successfully added to my cards list", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "One item was successfully added to My Cards list", Toast.LENGTH_LONG).show();
             }
             cardsSelect.removeAll(cardsSelect);
 
@@ -288,9 +288,9 @@ public class MainActivity extends AppCompatActivity
             wanted.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
             wanted.setVisible(false);
             if(cardsSelect.size()>1) {
-            Toast.makeText(this,"items were successfully added to my wanted list",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"items were successfully added to My Wanted list",Toast.LENGTH_LONG).show();
             }else {
-                Toast.makeText(this, "One item was successfully added to my wanted list", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "One item was successfully added to My Wanted list", Toast.LENGTH_LONG).show();
             }
             cardsSelect.removeAll(cardsSelect);
         }

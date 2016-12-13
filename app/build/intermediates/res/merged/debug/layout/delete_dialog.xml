@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Would Like delete this card?"
+        android:text="Would you like to remove this card?"
         android:textColor="@color/black"
         android:id="@+id/txtmsgdg"
         android:layout_marginLeft="15dp"

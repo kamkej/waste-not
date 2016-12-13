@@ -284,12 +284,12 @@
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/br.png",
-        "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/drawable/br.png"
-    },
-    {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/br.png",
+        "source": "/home/julio/AndroidStudioProjects/waste-not/app/src/main/res/drawable/br.png"
     },
     {
         "merged": "/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/merged/debug/drawable/wb.png",
