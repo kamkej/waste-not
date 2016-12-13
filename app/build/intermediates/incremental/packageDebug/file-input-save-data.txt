@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Dec 13 16:41:16 BRST 2016
+#Tue Dec 13 16:58:04 BRST 2016
 210.set=ANDROID_RESOURCE
 282.file=/home/julio/AndroidStudioProjects/waste-not/app/build/intermediates/res/resources-debug.ap_/res/menu/activity_main_drawer.xml
 14.set=ANDROID_RESOURCE

@@ -75,8 +75,9 @@ public class wantedList extends AppCompatActivity implements NavigationView.OnNa
                     }
                 } else if (!cardsSelect.isEmpty()) {
                     cardsSelect.add(String.valueOf(cardsList.get(position).getId()));
-                    adapter.selects.remove(adapter.selects.indexOf(adapter.getItemId(position)));
+                    adapter.selects.add(adapter.getItemId(position));
                     adapter.notifyDataSetChanged();
+
                 } else {
                     Cards card = cardsList.get(position);
                     Intent intent = (new Intent(getApplicationContext(), CardDetail.class));
